@@ -16,8 +16,6 @@ import CreateGallery from './gallerys/create';
 import EditGallery from "./gallerys/edit";
 import ProductsPage from './products';
 import SubscribesPage from './subscribes';
-import SettingPage from './settings';
-import SettingEditPage from './settings/edit';
 import CreateProduct from './products/create';
 import EditProduct from './products/edit';
 import DownloadPage from './static-pages/download-page';

@@ -28,7 +28,6 @@ function App() {
     { title: "Certificates", slug: "/certificate", icon: "" },
     { title: "Testmonial", slug: "/testmonial", icon: "" },
     { title: "Subscribes", slug: "/subscribes", icon: "" },
-    { title: "Settings", slug: "/settings", icon: "" },
  
   ];
   return (

@@ -12,7 +12,6 @@ function HomePage() {
     {sl:9,  title: "Testmonial", slug: "/testmonial"},
     {sl:10,  title: "Pop Up", slug: "/popup"},
     {sl:11,  title: "Pages", slug: "/pages"},
-    {sl:12,  title: "Settings", slug: "/settings"},
     {sl:13,  title: "Slider", slug: "/slider"},
 
  
