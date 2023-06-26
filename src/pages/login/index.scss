@@ -1,0 +1,75 @@
+@use "../../styles/index.scss" as *;
+.login-page {
+  height: 100vh;
+  background-color: get-color("secondary");
+  @include flex-center;
+}
+
+.lp__content-section {
+  max-width: 1200px;
+  box-shadow: 0 0 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.lp__login-section {
+  background-color: get-color("login-page-primary");
+  text-align: center;
+  padding: 25px;
+}
+.lp__login-section_img {
+  width: 150px;
+}
+.lp__input-section {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.lp__input-section_input {
+  padding-left: 40px !important;
+}
+
+.lp__input-section_img {
+  width: 25px;
+  position: absolute;
+  top: 6px;
+  left: 2%;
+}
+.login-page__btn {
+  @include primary-button;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+}
+.lp__description-section {
+  background-color: get-color("login-page-secondary");
+  text-align: center;
+}
+
+.lp__description-section_img {
+  width: 40%;
+}
+
+.lp__description-section_title {
+  color: get-color("secondary");
+}
+.lp__description-section_subtitle {
+  color: get-color("login-page-primary");
+  margin-top: 10px;
+}
+
+//Responsive SCSS
+@media only screen and (max-width: 600px) {
+  .login-page {
+    display: block;
+    padding: 20px;
+  }
+
+  .lp__content-section {
+    grid-template-columns: auto;
+  }
+
+  .lp__description-section {
+    display: none;
+  }
+}

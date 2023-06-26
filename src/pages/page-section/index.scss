@@ -1,0 +1,33 @@
+.pages-title{
+    text-align: left;
+    padding-top: 15px;
+}
+
+.pages-table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.pages-table-body{
+ text-align: center;   
+}
+
+.pages-table-body tr:nth-child(odd){
+    background-color: #f2f2f2;
+
+ 
+}
+
+.pages-table-body tr td{
+    padding: 10px 0;
+}
+
+.table-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.table__head__block, .table__data__block{
+    display:table-row !important;
+}

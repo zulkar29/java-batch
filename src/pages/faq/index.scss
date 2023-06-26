@@ -1,0 +1,11 @@
+@use "../../styles/index.scss" as *;
+
+.faq__head__block, .faq__data__block{
+    display: grid;
+    grid-template-columns: .5fr 2fr 3fr 1fr;
+    align-items: center;
+}
+
+.faq__data__block{
+    gap: 10px;
+}

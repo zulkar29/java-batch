@@ -1,0 +1,21 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin items-center-justify-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin primary-button {
+  border-radius: 20px;
+  background-color: get-color("primary-btn");
+  border: 1px solid get-color("primary-btn");
+  color: get-color("primary-btn-text");
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  &:hover {
+    background-color: darken($color: get-color("primary-btn"), $amount: 5%);
+  }
+}

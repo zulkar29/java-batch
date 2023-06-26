@@ -1,0 +1,44 @@
+@use "../../styles/index.scss" as *;
+.sidebar__section {
+  width: 20%;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: get-color("primary");
+}
+.sb__top-section {
+  @include items-center-justify-between;
+  border-bottom: 1px solid get-color("secondary");
+  padding: 5px;
+}
+.sb__top-logo {
+  width: 94px;
+}
+
+.sb__content-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.sb__content-list li {
+    display: contents;
+}
+.sb__content-list__item {
+  border-bottom: 1px solid get-color("secondary");
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all ease-in-out 0.2s;
+  font-weight: 700;
+  color: #fff;
+  font-size: 18px;
+}
+
+.sb__content-list__item:hover {
+  background-color: darken($color: get-color("primary"), $amount: 10%);
+}
+.active{
+  background-color: darken($color: get-color("primary"), $amount: 10%);
+}
+.selected__menu{
+  color: red;
+}

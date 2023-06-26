@@ -1,0 +1,19 @@
+@use "sass:map";
+// color variable for the theme
+$colors: (
+  "primary": #026195,
+  "secondary": #cfcfcf,
+  "login-page-primary": #f6f6f6,
+  "login-page-secondary": #01103e,
+  "primary-btn": #026195,
+  "primary-btn-text": #fff,
+  "error": #ff0000,
+);
+
+@function get-color($colorKey) {
+  @return map.get($colors, $colorKey);
+}
+
+//z-index variable
+
+//font variable

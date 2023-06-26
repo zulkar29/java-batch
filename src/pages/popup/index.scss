@@ -1,0 +1,11 @@
+.popup-image img{
+    max-width: 150px;
+}
+
+.popup__data__block, .popup__head__block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+.popup__data__block{
+    column-gap: 10px;
+}

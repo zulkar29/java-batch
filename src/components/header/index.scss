@@ -1,0 +1,75 @@
+@use "../../styles/index.scss" as *;
+.nav__section {
+  margin-bottom: 60px;
+  width: inherit;
+  padding-right: 20px;
+  margin-bottom: 80px;
+}
+.nav__section_fixed {
+  position: fixed;
+  height: 60px;
+  width: 80%;
+  background-color: get-color("primary");
+  @include items-center-justify-between;
+  z-index: 10;
+}
+.nav__top-menu {
+  width: 40px;
+  cursor: pointer;
+  fill: get-color("secondary");
+  opacity: 0;
+}
+.nav__user-section {
+  position: relative;
+  transition: all ease-in-out 0.2s;
+}
+.nav__user-btn {
+  margin-right: 25px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  height: 60px;
+  border-radius: 10px;
+}
+.nav__user-section:hover {
+  background-color: darken($color: get-color("primary"), $amount: 5%);
+}
+.nav__user-section:hover .nav__user__dropdown {
+  display: block;
+}
+.nav__user-img {
+  height: 45px;
+  width: auto;
+  border-radius: 100%;
+  margin-right: 5px;
+  box-shadow: 0 0 5px;
+}
+
+.nav__user-info{
+  color: #fff;
+}
+
+.nav__user__dropdown {
+  position: absolute;
+  list-style: none;
+  background-color: get-color("secondary");
+  width: 100%;
+  right: 1px;
+  display: none;
+}
+.nav__user__dropdown a {
+  text-decoration: none;
+}
+.nav__dropdown-btn {
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+.nav__dropdown-btn:hover {
+  background-color: green;
+}

@@ -1,0 +1,13 @@
+.testmonial__head__block, .testmonial__body__block{
+    display: grid;
+    grid-template-columns: .4fr 1fr 3fr 1fr 1fr;
+    align-items: center;
+}
+
+.testmonial__body__block{
+    gap: 10px;
+}
+
+.testmonial__img{
+    max-width: 100%;
+}
